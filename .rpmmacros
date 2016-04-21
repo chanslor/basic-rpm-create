@@ -1,0 +1,9 @@
+%_topdir /mdc/basic-rpm-create
+%_signature gpg
+%_gpg_path  $HOME/.gnupg
+%packager   Michael D. Chanslor
+
+%__arch_install_post \
+    [ "%{buildarch}" = "noarch" ] || QA_CHECK_RPATHS=1 ; \
+    case "${QA_CHECK_RPATHS:-}" in [1yY]*) /usr/lib/rpm/check-rpaths ;; esac \
+    /usr/lib/rpm/check-buildroot
