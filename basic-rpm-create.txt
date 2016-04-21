@@ -1,11 +1,16 @@
+In this example, you need work from your $HOME directory.
 
-1.)
- setup $HOME/.rpmmacros
- cp basic-rpm-create/.rpmmacros  $HOME
+
+1.) Setup $HOME/.rpmmacros
+
+ cd $HOME
+ git clone https://github.com/chanslor/basic-rpm-create.git
+ cd basic-rpm-create
+ cp .rpmmacros  $HOME
 
 2.)
  cd $HOME/basic-rpm-create/SPECS
  rpmbuild -bb hello.spec
 
- Should have created $HOME/basic-rpm-create/RPMS/x86_64/hello-world-1-2.fc23.x86_64.rpm
+ Should have created rpm in  $HOME/basic-rpm-create/RPMS/
  
