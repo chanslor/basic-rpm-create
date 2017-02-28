@@ -1,4 +1,4 @@
-%_topdir /mdc/basic-rpm-create
+%_topdir %(echo $PWD)/
 %_signature gpg
 %_gpg_path  $HOME/.gnupg
 %packager   Michael D. Chanslor
