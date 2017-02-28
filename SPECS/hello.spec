@@ -8,6 +8,7 @@ License:	GPL+ or Artistic
 #This hello script is placed in ~/rpmbuild/SOURCES/
 Source0:	hello
 
+%define _topdir %(echo $PWD)/
 
 %description
 SShow how easy creating an rpm can be for a simple script.
