@@ -9,4 +9,5 @@ cd basic-rpm-create
 
 3.
 rpmbuild --define "_topdir ${PWD}/" -bb SPECS/hello.spec
+
 Should have created rpm in $HOME/basic-rpm-create/RPMS/
