@@ -1,7 +1,6 @@
 # basic-rpm-create
 Example of a basic rpm creation 
 
-In this example, you need work from your $HOME directory.
 
 
 :one: 
