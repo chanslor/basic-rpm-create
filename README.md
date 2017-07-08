@@ -11,7 +11,7 @@ git clone https://github.com/chanslor/basic-rpm-create.git
 
  :two:
 ```bash
-cp .rpmmacros  $HOME
+cp basic-rpm-create/.rpmmacros  $HOME
 ```
 
 :three:
