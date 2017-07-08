@@ -1,16 +1,12 @@
-In this example, you need work from your $HOME directory.
+Example of a basic rpm creation
 
+1.
+#Clone this repo
+git clone https://github.com/chanslor/basic-rpm-create.git
 
-1.) Setup $HOME/.rpmmacros
+2.
+cd basic-rpm-create
 
- cd $HOME
- git clone https://github.com/chanslor/basic-rpm-create.git
- cd basic-rpm-create
- cp .rpmmacros  $HOME
-
-2.)
- cd $HOME/basic-rpm-create/SPECS
- rpmbuild -bb hello.spec
-
- Should have created rpm in  $HOME/basic-rpm-create/RPMS/
- 
+3.
+rpmbuild --define "_topdir ${PWD}/" -bb SPECS/hello.spec
+Should have created rpm in $HOME/basic-rpm-create/RPMS/
