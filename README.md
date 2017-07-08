@@ -4,14 +4,16 @@ Example of a basic rpm creation
 In this example, you need work from your $HOME directory.
 
 
-:one: Setup $HOME/.rpmmacros
+:one: 
+Setup $HOME/.rpmmacros
 
+ :two:
  cd $HOME
  git clone https://github.com/chanslor/basic-rpm-create.git
  cd basic-rpm-create
  cp .rpmmacros  $HOME
 
-2.)
+:three:
  cd $HOME/basic-rpm-create/SPECS
  rpmbuild -bb hello.spec
 
