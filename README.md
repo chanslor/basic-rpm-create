@@ -6,20 +6,20 @@ In this example, you need work from your $HOME directory.
 
 :one: 
 ```bash
-Setup $HOME/.rpmmacros
+#Clone this repo
+git clone https://github.com/chanslor/basic-rpm-create.git
 ```
 
  :two:
 ```bash
-cd $HOME
-git clone https://github.com/chanslor/basic-rpm-create.git
-cd basic-rpm-create
 cp .rpmmacros  $HOME
 ```
 
 :three:
- cd $HOME/basic-rpm-create/SPECS
- rpmbuild -bb hello.spec
+```bash
+cd basic-rpm-create/SPECS
+rpmbuild -bb hello.spec
+```
 
  Should have created rpm in  $HOME/basic-rpm-create/RPMS/
 
