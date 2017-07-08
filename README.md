@@ -11,12 +11,15 @@ git clone https://github.com/chanslor/basic-rpm-create.git
 
  :two:
 ```bash
-cp basic-rpm-create/.rpmmacros  $HOME
+
+cd basic-rpm-create
+mkdir -p ./rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
+TOPDIR=$(pwd)/rpmbuild
 ```
 
 :three:
 ```bash
-cd basic-rpm-create/SPECS
+cd SPECS
 rpmbuild -bb hello.spec
 ```
 
