@@ -16,3 +16,4 @@ In this example, you need work from your $HOME directory.
  rpmbuild -bb hello.spec
 
  Should have created rpm in  $HOME/basic-rpm-create/RPMS/
+/play letitgo
